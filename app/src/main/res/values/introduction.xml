@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="introduction"><b><u>INTRODUCTION</u></b></string>
+
+    <string name="introduction_description">\t A data structure is an arrangement of data, either in the computers memory or on the
+    disk storage. Some common examples of data structures include arrays, linked lists, queues, stacks, binary trees, and hash tables.
+    </string>
+
+    <string name="applications">⭐Data structures are widely applied  in areas such as : \n 1. Compiler design \n 2. operating system
+    \n 3. statistical analysis package \n 4. DBMS \n 5. numerical analysis \n 6. simulation \n 7. Artificial intelligence \n 8. Graphics</string>
+
+    <string name="important_role">\t Data structures play an important role in DBMS. The major data structures used in the network data
+        model are graphs. In the same way, hierarchical data model uses trees and RDBMS uses arrays.</string>
+
+    <string name="algorithms">\t Algorithms are used to manipulate  the data contained in these data structures, as in searching
+    and sorting. While working with data structures, algorithms are used to insert new data, search for a specified item, and delete
+    a specific item.</string>
+</resources>

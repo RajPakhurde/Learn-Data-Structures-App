@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abstract_datatype"><b>ABSTRACT DATA TYPE</b></string>
+    <string name="abstract_description">An abstract data type (ADT) is the way we look at a data structure, focusing on what it does
+    and ignoring how ti does it job. For example, stacks and queues are perfect examples of an abstract data type. We can implement
+    both these ADTs using an array or a linked list. This demonstrates the abstract nature of stacks and queue.</string>
+</resources>

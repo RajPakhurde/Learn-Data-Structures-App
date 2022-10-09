@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="types_of_ds"><b>TYPES OF DATA STRUCTURES</b></string>
+
+    <string name="description">Programming languages has a variety of data structures. In this section, we will just introduce them. We will discuss
+        them in detail in Explores section. </string>
+
+<!--    arrays-->
+    <string name="array">🟣 <b>ARRAYS</b></string>
+    <string name="arrays_description">An array is a collection of similar data elements. These data elements have the same data type. The elements of the array
+    are stored in consecutive memory locations and are referenced by an index (also known sa the subscript).</string>
+    <string name="array_declaration">Arrays are declared using the following syntax.\n    type name[size]; ....(in C language) \n For example, \n    int marks[10]</string>
+    <string name="array_explain">The above statement declares an array marks that contains 10 elements. The array index starts from zero. This means that the array
+    marks will contain 10 elements in all. The first element will be stored in marks[0], second element in marks[1], so on and so forth.</string>
+
+<!--      stacks-->
+    <string name="stack">🟣 <b>STACKS</b></string>
+    <string name="stack_description">In the computers memory, stacks can be represented as a linear array. Every stack has a variable TOP associate with it. TOP is
+    used to store  the address of the topmost element of the stack. It is this position from where the element will be added or deleted. There is another variable
+    MAX, which will be used to store the maximum number of elements that the stack can store. \n    If TOP = NULL, then it indicates that hte stack is empty and
+        if Top = MAX, then the stack is full.</string>
+
+<!--    queue-->
+    <string name="queue">🟣 <b>QUEUE</b></string>
+    <string name="queue_description">A queue is a FIFO (First-In First-Out) data structure in which the element that wa inserted first is the first one to be
+        taken out. The elements in a queue are added at one end called the rear and removed from the other end called the front. Like stacks, queues can be
+    implemented either by using arrays or linked lists. \n \t Every queue will have front and rear variable that will point to the position from where
+        deletions and insertions can be done, respectively. Consider a queue given below.</string>
+
+<!--    Linkedlist-->
+    <string name="linklist">🟣 <b>LINKED LIST</b></string>
+    <string name="linklist_description">Linked list is a very flexible, dynamic data structure in which the elements can be added to or deleted from anywhere at will.
+         In contrast to using static arrays, a programmer need not worry about how many elements will be stored in the linked list. This feature  enables the programmers
+         to write robust programs which require less maintenance. \n \t In a linked list, each element (is called a node) is allocated space as it is added to the list.
+    Every node in the list points to the next node in the list. Therefore, in a linked list, every node contains the following two types of information: \n
+    \t 1. The value of the node or any other data that corresponds to tha node, and \n \t 2. A pointer or link to the nest node in the list.
+    \n The last node in the list contains a NULL Pointer to indicate that it is the end or tail of the list. Since the memory for a node is dynamically allocated when it
+    is added to the list. the total number of nodes that may be added to a list is limited only by the amount of memory available.</string>
+
+<!--    Trees-->
+    <string name="trees">🟣 <b>TREES</b></string>
+    <string name="trees_description">A binary tree is a data structure which is defined a s a collection of elements called the nodes. Every node contains a left pointer,
+    a right pointer, and a data element. Every binary tree has a root element pointed  b a root pointer. the root element is the topmost node in the tree. If root = Null,
+    then the tree  is empty. \n \t Below figure shows a binary tree. If the root node R is not Null, then the two trees T1 and T2 are called the left and right subtrees of R.
+    If T1 is non-empty , then t1 is said  to be the left successor of R. Likewise, if T2 is non-empty, then it is called  the right successor of R.</string>
+
+<!--    graphs-->
+     <string name="graphs">🟣 <b>GRAPHS</b></string>
+    <string name="graphs_description">A graph is an abstract data structure that is used to implement the graph concept from mathematics. It is basically a collection of
+    vertices (also called nodes) and edges that connect these vertices. A graph is often viewed as a generalization  of the tree structure, where instead of a having
+    a purely parent-to-child relationship between tree nodes, any king of complex relationships between the nodes can be represented.</string>
+</resources>

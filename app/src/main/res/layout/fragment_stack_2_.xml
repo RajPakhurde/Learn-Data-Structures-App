@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StackFragments.Stack_2_Fragment">
+
+    <TextView
+        android:id="@+id/tvStackVisualization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="STACK VISUALIZATION"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInsertElemtent"
+        android:layout_width="189dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Insert Number here!!"
+        android:inputType="number"
+        android:textColor="@color/topcolor"
+        android:textColorHint="#A8C3DA"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flfFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStackVisualization" />
+
+    <TextView
+        android:id="@+id/tvFirstElement"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecondElement" />
+
+    <TextView
+        android:id="@+id/tvSecondElement"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:textColor="#1F833B"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFirstElement"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFirstElement"
+        app:layout_constraintTop_toBottomOf="@+id/tvThirdElement" />
+
+    <TextView
+        android:id="@+id/tvThirdElement"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSecondElement"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSecondElement"
+        app:layout_constraintTop_toBottomOf="@+id/tvFourthElement" />
+
+    <TextView
+        android:id="@+id/tvFourthElement"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:textColor="#1F833B"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvThirdElement"
+        app:layout_constraintStart_toStartOf="@+id/tvThirdElement"
+        app:layout_constraintTop_toBottomOf="@+id/tvFifthElement" />
+
+    <TextView
+        android:id="@+id/tvFifthElement"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFourthElement"
+        app:layout_constraintStart_toStartOf="@+id/tvFourthElement"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+
+    <TextView
+        android:id="@+id/firstTop"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="⬅️TOP"
+        android:textColor="@color/topcolor"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFirstElement"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFirstElement" />
+
+    <TextView
+        android:id="@+id/secondTop"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="⬅️TOP"
+        android:textColor="@color/topcolor"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstElement"
+        app:layout_constraintStart_toEndOf="@+id/tvSecondElement"
+        app:layout_constraintTop_toTopOf="@+id/tvSecondElement" />
+
+    <TextView
+        android:id="@+id/thirdTop"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="⬅️TOP"
+        android:textColor="@color/topcolor"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvSecondElement"
+        app:layout_constraintStart_toEndOf="@+id/tvThirdElement"
+        app:layout_constraintTop_toTopOf="@+id/tvThirdElement" />
+
+    <TextView
+        android:id="@+id/fourthTop"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="⬅️TOP"
+        android:textColor="@color/topcolor"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvThirdElement"
+        app:layout_constraintStart_toEndOf="@+id/tvFourthElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFourthElement" />
+
+
+    <TextView
+        android:id="@+id/fifthTop"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="⬅️TOP"
+        android:textColor="@color/topcolor"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvFourthElement"
+        app:layout_constraintStart_toEndOf="@+id/tvFifthElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFifthElement" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/lightred"
+        android:text=" push"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertElemtent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etInsertElemtent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightred"
+        android:text=" pop"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="S"
+        android:textColor="@color/lightred"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvFourthElement"
+        app:layout_constraintEnd_toStartOf="@+id/tvFifthElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFifthElement" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="T"
+        android:textColor="@color/lightred"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvThirdElement"
+        app:layout_constraintEnd_toStartOf="@+id/tvFourthElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFourthElement"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="A"
+        android:textColor="@color/lightred"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSecondElement"
+        app:layout_constraintEnd_toStartOf="@+id/tvThirdElement"
+        app:layout_constraintTop_toTopOf="@+id/tvThirdElement" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="C"
+        android:textColor="@color/lightred"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstElement"
+        app:layout_constraintEnd_toStartOf="@+id/tvSecondElement"
+        app:layout_constraintTop_toTopOf="@+id/tvSecondElement" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="K"
+        android:textColor="@color/lightred"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFirstElement"
+        app:layout_constraintEnd_toStartOf="@+id/tvFirstElement"
+        app:layout_constraintTop_toTopOf="@+id/tvFirstElement"
+        app:layout_constraintVertical_bias="0.529" />
+
+
+    <FrameLayout
+        android:id="@+id/flfFragment"
+        android:name="com.example.datastructurevisualization.StackVisulaizationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

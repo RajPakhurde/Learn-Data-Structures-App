@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stack_info_1">\t Stack is an important data structure which stores its elements in an ordered manner. Take an analogy; you must have seen a pile where one plate is placed on top of another as shown is Fig. Now, when you want to remove a plate, you remove the topmost plate first. Hence, you can add and remove an element(i.e. the plate) only at/from one position which is the topmost position.
+    </string>
+<!--    ImageView-->
+    <string name="stack_info_2">\t Same is the case with a stack. A Stack is a linear data structure which can be implemented by either using an array or a linked list. The elements in a stack are added and removed only from oen end, which is called the <u>TOP</u>. Hence,a stack is called a <b>LIFO</b> (Last-In-First-Out) data structure, as the element that was inserted last is the first one to be taken out.
+        \n \t Now the big question is where do we need stacks in computer science? The answer is in function calls. Consider an example, where we are executing function A. In the course of its execution, function A calls another function B calls another function C, which in turn calls function D.
+        \n \t This scenario can be viewed in the form of a stack. Whenever a function calls another function, the calling function is pushed onto the top of the stack. This is because after the called function gets executed, the control is passed back to the calling function. Look at Fig which shows this concept.
+    </string>
+    <!--        ImageView-->
+    <string name="stack_info_3">\t Now when function E is executed, function D will be removed from the top of the stack and executed. Once function D gets completely executed, function C will be removed from the stack from execution. The whole procedure will be repeated until all the functions get executed. Let us look at the stack after each function is executed. This is shown in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="stack_info_4">\t Here, the stack ensures a proper execution order of functions. Therefore, stacks are frequently used in situations where the order of processing is very important, especially when the processing needs to be postponed until other conditions are fulfilled.
+    </string>
+
+<!--   Array representation of stacks-->
+    <string name="array_representation_of_stack"><b>ARRAY REPRESENTATION OF STACKS</b></string>
+    <string name="stack_representation_1">\t In the computers memory, stacks can be represented as a linear array. Every stack has a variable called <i>TOP</i> is used to store the address of the topmost element of the stack.
+        \n \t It is in this position where the element will be added or deleted. There is another variable called <i>MAX</i> which is used to store the maximum number of elements that the stack can hold.
+        \n \t If <i>TOP = NULL</i>, then it indicates that the stack is empty and if <i>TOP = MAX - 1</i>, then the stack is full. (You must be wondering why we have written <i>MAX -1</i>. It is because array indices start from 0). Look at Fig.
+    </string>
+<!--    ImageView-->
+    <string name="stack_representation_2">\t This stack in Fig. shows that <i>TOP = 4</i>, so insertions and deletions will be done at this position. In the above stack, five more elements can still be stored.
+    </string>
+
+<!--    OPERATIONS ON A STACK-->
+    <string name="operatins_on_stack"><b>OPERATIONS ON A STACK</b></string>
+    <string name="stack_operation">\t A stack has three basic operations: <i>PUSH, POP</i> and <i>PEEP</i>. The push operation adds an element to the top of the stack and the pop operation removes the elements from the top of the stack. The peep operation returns the value of the topmost element of the stack.
+    </string>
+    <string name="push_operation"><b>PUSH OPERATION</b>
+    </string>
+    <string name="push_operation_1">\t The push operation is used to insert an element into the stack. The new element is added at the topmost position of the stack. However, before inserting the value, we must  first check if <i>TOP = MAX-1</i>, because if that  is the case, then the stack is full and no more insertions can be further done. If an attempt is made to insert a value in a stack that is already full, an OVERFLOW message is printed. Consider the stack array in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="push_operation_2">\t To insert an element with the value 6, we first check if <i>TOP = MAX-1</i>. If the condition is false, then we increment the value of <i>TOP</i> and store the new element at the position given by stack by stack[TOP]. Thus, the updated stack becomes as shown in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="push_operation_3">\t Fig. shows the algorithm to insert an element in the stack. In Step 1, we first check for the overflow condition. In Step 2, TOP is incremented so that it points to the next free location in the array. In Step 3, the value is stored in the stack array at the location pointed by the TOP.
+    </string>
+
+    <string name="pop_operation"><b>POP OPERATION</b>
+    </string>
+    <string name="pop_operation_1">\t The pop operation is used to delete the topmost element from the stack. However, before deleting the value, we must first check if <i>TOP=NULL</i> because if that is the case, then it means the stack is empty and no more deletions can further be done. If an attempt is made to delete a value from a stack that is already empty, an UNDERFLOW message is printed. Consider the stack array given in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="pop_operation_2">\t To delete the topmost element, we first check if <i>TOP=NULL</i>. If the condition is false, then we decrement the value of top. Thus, the updated stack becomes as shown in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="pop_operation_3">Figure. shows the algorithm to delete an element from the stack. In Step 1, we first check for the underflow condition. In Step 2, the value of the location in the stack array pointed by the <i>TOP</i> is stored in VAL. In Step 3, <i>TOP</i> is decremented.
+    </string>
+
+    <string name="peep_operation"><b>PEEP OPERATION</b>
+    </string>
+    <string name="peep_operation_1">\t Peep is an operation that returns the value of the topmost element of the stack without deleting it from the stack. The algorithm for peep operation is given in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="peep_operation_2">\t However, the peep operation first checks if the stack is empty or contains some elements. For this, a condition is checked. If <i>TOP = NULL</i>, then an appropriate message is printed, else the value is returned. Consider the stack array given in Fig.
+    </string>
+<!--    ImageView-->
+    <string name="peep_operation_3">\t Here, the peep operation will return 5, as it is the value of the topmost element of the stack.
+    </string>
+</resources>
