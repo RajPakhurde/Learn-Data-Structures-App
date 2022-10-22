@@ -1,11 +1,15 @@
 package com.example.learndatastructures.CircularQueue
 
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebViewClient
 import com.example.learndatastructures.R
+import com.example.learndatastructures.databinding.FragmentCircularQueue3Binding
+import com.example.learndatastructures.databinding.FragmentQueue3Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,12 +34,56 @@ class CircularQueue_3_Fragment : Fragment() {
         }
     }
 
+    private lateinit var binding: FragmentCircularQueue3Binding
+    var i = 1
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_circular_queue_3_, container, false)
+        binding = FragmentCircularQueue3Binding.inflate(inflater, container, false)
+        return binding.getRoot()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.webView1.webViewClient = WebViewClient()
+        binding.webView1.loadUrl("https://www.programiz.com/dsa/circular-queue")
+
+        binding.swipeRefreshLayout1.setOnRefreshListener {
+
+            if(i==1) {
+                binding.webView1.loadUrl("https://www.javatpoint.com/circular-queue")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==2) {
+                binding.webView1.loadUrl("https://www.edureka.co/blog/circular-queue-in-c/")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==3){
+                binding.webView1.loadUrl("https://www.simplilearn.com/tutorials/data-structure-tutorial/circular-queue-in-data-structure")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==4){
+                binding.webView1.loadUrl("https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==5){
+                binding.webView1.loadUrl("https://www.programiz.com/dsa/circular-queue")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i = 1
+            }
+        }
+
+        binding.tvNote1.ellipsize = TextUtils.TruncateAt.MARQUEE
+        binding.tvNote1.isSelected = true
+
+
     }
 
     companion object {

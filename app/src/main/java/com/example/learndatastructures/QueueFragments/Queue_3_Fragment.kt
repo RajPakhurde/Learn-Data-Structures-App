@@ -1,11 +1,15 @@
 package com.example.learndatastructures.QueueFragments
 
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebViewClient
 import com.example.learndatastructures.R
+import com.example.learndatastructures.databinding.FragmentQueue3Binding
+import com.example.learndatastructures.databinding.FragmentStack3Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,13 +34,58 @@ class Queue_3_Fragment : Fragment() {
         }
     }
 
+    private lateinit var binding: FragmentQueue3Binding
+    var i = 1
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_queue_3_, container, false)
+        binding = FragmentQueue3Binding.inflate(inflater, container, false)
+        return binding.getRoot()
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.webView1.webViewClient = WebViewClient()
+        binding.webView1.loadUrl("https://www.programiz.com/dsa/queue")
+
+        binding.swipeRefreshLayout1.setOnRefreshListener {
+
+            if(i==1) {
+                binding.webView1.loadUrl("https://www.digitalocean.com/community/tutorials/queue-in-c")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==2) {
+                binding.webView1.loadUrl("https://www.studytonight.com/data-structures/queue-data-structure")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==3){
+                binding.webView1.loadUrl("https://www.geeksforgeeks.org/queue-data-structure/")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==4){
+                binding.webView1.loadUrl("https://www.javatpoint.com/data-structure-queue")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==5){
+                binding.webView1.loadUrl("https://www.programiz.com/dsa/queue")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i = 1
+            }
+        }
+
+        binding.tvNote1.ellipsize = TextUtils.TruncateAt.MARQUEE
+        binding.tvNote1.isSelected = true
+
+
+    }
+
 
     companion object {
         /**
