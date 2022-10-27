@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.learndatastructures.CircularQueue.CircularQueueActivity
+import com.example.learndatastructures.LinkedlistFragments.LInkedlistActivity
 import com.example.learndatastructures.QueueFragments.QueueActivity
 import com.example.learndatastructures.StackFragments.StackActivity
 import com.example.learndatastructures.databinding.ActivityDsactivityBinding
@@ -29,6 +30,11 @@ class DSActivity : AppCompatActivity() {
         binding.cvCircularQueue.setOnClickListener {
             val secondintent = Intent(this,CircularQueueActivity::class.java)
             startActivity(secondintent)
+        }
+
+        binding.cvLinkedlist.setOnClickListener {
+            val intent = Intent(this,LInkedlistActivity::class.java)
+            startActivity(intent)
         }
 
     }

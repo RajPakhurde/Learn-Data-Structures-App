@@ -3,25 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LearnDataStructures/app/src/main/res/drawable/circle_background.xml" value="0.1" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/drawable/textview_border.xml" value="0.1095" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/font/fonts.xml" value="0.18697916666666667" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_abstract_dt.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_circular_queue.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_dsactivity.xml" value="0.16666666666666666" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_introduction.xml" value="0.16666666666666666" />
+        <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_linkedlist.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_main.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_main2.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_queue.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_stack.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/activity_types_of_ds.xml" value="0.16666666666666666" />
+        <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_circular_queue_1_.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_circular_queue_2_.xml" value="0.13333333333333333" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_circular_queue_3_.xml" value="0.1578125" />
+        <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_l_inked_list_1_.xml" value="0.1578125" />
+        <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_l_inked_list_2_.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_queue_1_.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_queue_2_.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_queue_3_.xml" value="0.1578125" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_stack_1_.xml" value="0.1" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_stack_2_.xml" value="0.16666666666666666" />
         <entry key="..\:/LearnDataStructures/app/src/main/res/layout/fragment_stack_3_.xml" value="0.1578125" />
+        <entry key="..\:/LearnDataStructures/app/src/main/res/layout/item_list.xml" value="0.15677083333333333" />
       </map>
     </option>
   </component>

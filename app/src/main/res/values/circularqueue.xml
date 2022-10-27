@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="circularqueue_info_1"><b>CIRCULAR QUEUE</b>  </string>
+    <string name="circularqueue_info_2">\n \t In linear lists, we have discussed so far that insertions can be done only at one end called the rear and deletion is always done from the other end called the front. Look at the queue shown in Fig.  </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_3">\n \t Here, front = 0 and rear = 9. \n \t Now, if you want to insert another value, it will not be possible because the queue is completely full. There is no empty space where the value can be inserted. Consider a scenario in which two successive deletions are made. The queue will then be given as shown in Fig. </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_4">\n \t Here, front = 2 and rear = 9. \n \t Suppose we want to insert a new element in the queue shown in Fig. Even though there is space available, the OVERFLOW condition still exists because the condition rear = MAX - 1 still holds true. This is a major drawback of a linear queue. </string>
+    <string name="circularqueue_info_5">\n \t To cater to this situation, we have two solutions. First, shift the elements to the left so that the vacant space can be occupied and utilized efficiently. But this can be very time-consuming especially when the queue is quite large. </string>
+    <string name="circularqueue_info_6">\n \t The second option is to use a circular queue. In the circular queue, the first index comes right after the last index. Conceptually, you can think of a circular queue as shown in Fig. </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_7">\n \t The circular queue will be full, only when front = 0 and rear = Max 1. A circular queue is implemented in the same manner as a linear queue is implemented. The only difference will be in the code that performs insertion and deletion operations. For insertion, we now have to check for the following three conditions:</string>
+    <string name="circularqueue_info_8">\n \t \t ▫️If front=0 and rear = MAX-1, then print that the circular queue is full. Look at the quee given in Fig. 9.35 which illustrates this point.  </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_9">\n \t \t ▫️If rear != MAX-1, then the value will be inserted and rear will be incremented as illustrated in Fig </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_10">\n \t \t ▫️If front != 0 and rear = MAX - 1, then it means that the queue is not full. So, set rear = 0 and insert the new element there, as shown in Fig.  </string>
+<!--     ImageView-->
+    <string name="circularqueue_info_11">\n \t Let us look at Fig. 9.38 which shows the algorithm to insert an element in a circular queue. In Step 1, we make three checks. First for the overflow condition, second to see if the queue is initially empty, and third to see if -1, then; the REAR end has already reached the maximum capacity while there are certain free locations before the FRONT end. In Step 2, the value is stored in the queue array at the location pointed by the REAR. </string>
+<!--    ImageView-->
+    <string name="circularqueue_info_12">\n \t After seeing how a new element is added in a circular queue, let us now discuss how deletions are performed in this case. To delete an element, again we check for three conditions. \n \t ▫️Look at Fig. If front=-1, then there are no elements in the queue. So, an underflow condition will be reported.</string>
+<!--    ImageView-->
+    <string name="circularqueue_info_13">\n \t ▫️If the queue is not empty and after returning the value on the front, front = rear, the queue has now become empty and so, front and rear are set to -1. This is illustrated in Fig.  </string>
+<!--    Imageview-->
+    <string name="circularqueue_info_14">\n \t ▫️If the queue is not empty and after returning the value on the front, front = MAX-1, then front is set to 0. This is shown in Fig. </string>
+<!--    Imageveiw-->
+    <string name="circularqueue_info_15">\n \t Let us look at Fig which shows the algorithm to delete an element from a circular queue. In Step 1, we check for the underflow condition. In Step 2, the value of the queue at the location pointed by FRONT is stored in VAL. In Step 3, we make two checks. First to see if the queue has become empty after deletion and second to see if FRONT has reached the maximum capacity of the queue. The value of FRONT is then updated based on the outcome of these tests. </string>
+<!--   Imageview-->
+</resources>

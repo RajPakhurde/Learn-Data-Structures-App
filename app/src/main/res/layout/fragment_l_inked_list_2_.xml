@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvStackVisualization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="@color/topcolor"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="LinkedList VISUALIZATION"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleLoc" />
+
+    <EditText
+        android:id="@+id/etInsertElement"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:background="@drawable/textview_border"
+        android:hint="Enter number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/btnDeleBeg"
+        app:layout_constraintTop_toBottomOf="@+id/tvStackVisualization" />
+
+    <EditText
+        android:id="@+id/etInsertLocation"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="loc"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertElement"
+        app:layout_constraintStart_toEndOf="@+id/etInsertElement"
+        app:layout_constraintTop_toTopOf="@+id/etInsertElement" />
+
+    <Button
+        android:id="@+id/btnAddAtBeg"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/lightred"
+        android:text="add at beg"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertLocation"
+        app:layout_constraintStart_toEndOf="@+id/etInsertLocation"
+        app:layout_constraintTop_toTopOf="@+id/btnDeleBeg" />
+
+
+    <Button
+        android:id="@+id/btnAddAtEnd"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:text="add at end"
+        android:backgroundTint="@color/lightred"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddAtBeg"
+        app:layout_constraintStart_toStartOf="@+id/btnAddAtBeg"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddAtBeg" />
+
+    <Button
+        android:id="@+id/btnAddAtLoc"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:text="add at loc"
+        android:backgroundTint="@color/lightred"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddAtEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddAtEnd"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddAtEnd" />
+
+    <Button
+        android:id="@+id/btnDeleBeg"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightred"
+        android:text="delete at beg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etInsertElement" />
+
+    <Button
+        android:id="@+id/btnDeleEnd"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/lightred"
+        android:text="delete at End"
+        app:layout_constraintStart_toStartOf="@+id/btnDeleBeg"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleBeg" />
+
+    <Button
+        android:id="@+id/btnDeleLoc"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:text="delete at loc"
+        android:backgroundTint="@color/lightred"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeleEnd"
+        app:layout_constraintStart_toStartOf="@+id/btnDeleEnd"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleEnd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
