@@ -1,11 +1,15 @@
 package com.example.learndatastructures.LinkedlistFragments
 
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebViewClient
 import com.example.learndatastructures.R
+import com.example.learndatastructures.databinding.FragmentCircularQueue3Binding
+import com.example.learndatastructures.databinding.FragmentLInkedList3Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,12 +34,56 @@ class LInkedList_3_Fragment : Fragment() {
         }
     }
 
+    private lateinit var binding: FragmentLInkedList3Binding
+    var i = 1
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_l_inked_list_3_, container, false)
+        binding = FragmentLInkedList3Binding.inflate(inflater, container, false)
+        return binding.getRoot()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.webView1.webViewClient = WebViewClient()
+        binding.webView1.loadUrl("https://www.programiz.com/dsa/linked-list")
+
+        binding.swipeRefreshLayout1.setOnRefreshListener {
+
+            if(i==1) {
+                binding.webView1.loadUrl("https://www.javatpoint.com/singly-linked-list")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==2) {
+                binding.webView1.loadUrl("https://www.scaler.com/topics/linked-list/")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==3){
+                binding.webView1.loadUrl("https://www.tutorialspoint.com/data_structures_algorithms/linked_list_program_in_c.htm")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==4){
+                binding.webView1.loadUrl("https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/tutorial/")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i++
+            }
+            else if(i==5){
+                binding.webView1.loadUrl("https://www.programiz.com/dsa/linked-list")
+                binding.swipeRefreshLayout1.isRefreshing = false
+                i = 1
+            }
+        }
+
+        binding.tvNote1.ellipsize = TextUtils.TruncateAt.MARQUEE
+        binding.tvNote1.isSelected = true
+
+
     }
 
     companion object {
