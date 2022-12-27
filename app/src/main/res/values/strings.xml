@@ -5,5 +5,9 @@
     <string name="abstract_data_type"><u>Abstract Data Type</u></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_data_structure">Explore Data Structures</string>
+    <string name="types_of_data_structures">Types of Data Structures</string>
+    <string name="intro">Introduction</string>
+    <string name="abstract_dt">Abstract Data Type</string>
 
 </resources>

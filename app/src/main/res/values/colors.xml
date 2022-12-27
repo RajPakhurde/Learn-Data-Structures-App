@@ -27,4 +27,9 @@
     <color name="cardbackgound_color_blue">#263049</color>
     <color name="dark_black">#121212</color>
 
+    <color name="background_lighttheme">#EAF6FF</color>
+    <color name="explore_ds_button">#95B3FF</color>
+    <color name="cardView_background">#CEDBF5</color>
+
+
 </resources>
