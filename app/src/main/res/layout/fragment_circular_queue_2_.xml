@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fragment_background"
+    android:background="@color/background_lighttheme"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CircularQueue.CircularQueue_2_Fragment">
 
@@ -33,11 +33,11 @@
         android:layout_margin="40dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/textview_border"
-        android:hint="Enter elements"
+        android:hint="Insert Number here!!"
         android:inputType="number"
         android:padding="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/topcolor"
+        android:textColorHint="#A8C3DA"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvStackVisualization" />

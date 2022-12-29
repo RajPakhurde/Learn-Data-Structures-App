@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="8dp"
-    android:background="@color/fragment_background"
+    android:background="@color/background_lighttheme"
     tools:context=".BasicActivitys.Types_Of_Ds_Activity">
 
     <ScrollView
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/description"
                 android:padding="8dp"
                 android:textSize="20sp"/>
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/array"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:padding="8dp"
                 android:textSize="24sp"/>
 
@@ -50,7 +50,7 @@
                 android:text="@string/arrays_description"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="8dp"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:textSize="20sp" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/array_declaration"
                 android:textSize="20sp" />
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/array_explain"
                 android:textSize="20sp"/>
 
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="@string/stack"
                 android:textSize="24sp"/>
 
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/stack_description"
                 android:textSize="20sp"/>
 
@@ -92,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="@string/queue"
                 android:textSize="24sp"/>
 
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/queue_description"
                 android:textSize="20sp"/>
 
@@ -109,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="@string/linklist"
                 android:textSize="24sp"/>
 
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/linklist_description"
                 android:textSize="20sp"/>
 
@@ -126,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="@string/trees"
                 android:textSize="24sp"/>
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/trees_description"
                 android:textSize="20sp"/>
 
@@ -143,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="@string/graphs"
                 android:textSize="24sp"/>
 
@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@color/text_color_light_blue"
+                android:textColor="@color/light_black"
                 android:text="@string/graphs_description"
                 android:textSize="20sp"/>
 

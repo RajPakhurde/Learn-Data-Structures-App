@@ -14,11 +14,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <WebView
                 android:id="@+id/webView1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
+                android:layout_height="wrap_content" />
+            </ScrollView>
         </ScrollView>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
@@ -27,15 +31,15 @@
         android:id="@+id/tvNote1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NOTE* Make sure your Internet is ON | Swipe down to refresh new Article"
-        android:textColor="#FF0902"
-        android:padding="8dp"
+        android:layout_alignParentBottom="true"
         android:background="@color/fragment_background"
-        android:singleLine="true"
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
+        android:padding="8dp"
         android:scrollHorizontally="true"
-        android:layout_alignParentBottom="true"/>
+        android:singleLine="true"
+        android:text="NOTE* Make sure your Internet is ON | Swipe down to refresh new Article"
+        android:textColor="#FF0902" />
 
 
 </RelativeLayout>

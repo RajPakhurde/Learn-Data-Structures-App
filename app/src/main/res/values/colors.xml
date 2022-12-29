@@ -31,5 +31,15 @@
     <color name="explore_ds_button">#95B3FF</color>
     <color name="cardView_background">#CEDBF5</color>
 
+    <color name="light_pink">#F48FB1</color>
+    <color name="light_purple">#CE93D8</color>
+    <color name="light_voilet">#B39DDB</color>
+    <color name="light_yellow">#E6EE9C</color>
+    <color name="light_greens">#A5D6A7</color>
+    <color name="light_black">#2B2B2B</color>
+
+
+
+
 
 </resources>
